@@ -1,0 +1,29 @@
+server:
+    port: 8087
+spring:
+  application:
+    name: auth-service
+  redis:
+    host: 127.0.0.1
+eureka:
+  client:
+    service-url:
+       defaultZone: http://127.0.0.1:10086/eureka
+  instance:
+    ip-address: 127.0.0.1
+    prefer-ip-address: true
+ly:
+  jwt:
+    pubKeyPath: D:\workspace\leyou\ly-common\ssh\id_rsa.pub # 公钥地址
+    priKeyPath: D:\workspace\leyou\ly-common\ssh\id_rsa # 私钥地址
+    user:
+      expire: 30 # 过期时间,单位分钟
+      cookieName: LY_TOKEN # cookie名称
+      cookieDomain: leyou.com # cookie的域
+      MinRefreshInterval: 5
+  pay:
+    wx:
+      appID: wx8397f8696b538317
+      mchID: 1473426802
+      key: T6m9iK73b0kn9g5v426MKfHQH7X8rKwb
+      payType: NATIVE

@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: ly-sms
+  rabbitmq:
+    host: 192.168.157.129
+    username: admin
+    password: admin
+    virtual-host: /leyou
+server:
+  port: 8085
+ly:
+  sms:
+    accessKeyId: LTAI4FnPguabEQpK2cQtRV7P
+    accessKeySecret: 1Oy5ABdqtmSpvoPtf3kBEg6Oy8QiyP
+    signName: 黑马旅游网 # 签名名称
+    verifyCodeTemplate: SMS_178766189 # 模板名称
+    domain: dysmsapi.aliyuncs.com # 域名
+    action: SendSMS # API类型，发送短信
+    version: 2017-05-25 # API版本，固定值
+    regionID: cn-hangzhou # 区域id
